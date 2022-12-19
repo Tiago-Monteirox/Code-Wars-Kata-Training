@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/546e2562b03326a88e000020
+
+My resolution:
+
+def square_digits(num):
+    num = str(num)
+    result = ''
+    for i in num:
+        result += str(int(i)**2)
+    return int(result)
+    
+
+Other resolutions:
+
+def square_digits(num):
+    words = list(str(num))
+    for word in words:
+        resultado = (int(word)**2, end="")
+        return resultado
+        
+        
+def square_digits(num):        
+  return int(''.join(str(int(d)**2) for d in str(num)))
