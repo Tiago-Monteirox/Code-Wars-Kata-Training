@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5513795bd3fafb56c200049e
+
+My resolution:
+
+def count_by(x, n):
+  new_list = [] 
+  for i in range(1, n+1):
+      resultado = x * i
+      new_list.append(resultado)
+  return new_list
+
+
+
+Cleaver resolution using list comprehension:
+
+def count_by(x, n):
+  return [i * x for i in range(1,n+1)]
