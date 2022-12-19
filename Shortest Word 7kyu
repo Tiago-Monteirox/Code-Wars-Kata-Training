@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
+
+My resolution: 
+
+def find_short(s):
+    lista = s.split()
+    lenght = int("inf")
+    for world in lista:
+        if (len(world) < lenght):
+            lenght = len(world)
+
+    return lenght
+
+
+Other cleaver resolutions:
+
+return min(len(x) for x in s.split())
+
+return min(map(len, s.split(' ')))
