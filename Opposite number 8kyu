@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/56dec885c54a926dcd001095
+
+My solution: 
+
+def opposite(number):
+    if number > 0:
+        number = -abs(number)
+        return number
+    else:
+        number = abs(number)
+        return number
+
+Other's solution(smarter):
+
+def opposite(number):
+  return -number
+  
+def opposite(number):
+  return number * -1
