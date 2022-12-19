@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/54da5a58ea159efa38000836
+
+def find_it(seq):
+    counter = Counter(seq)
+    for num in counter:
+        if counter[num] % 2 != 0:
+            return num
