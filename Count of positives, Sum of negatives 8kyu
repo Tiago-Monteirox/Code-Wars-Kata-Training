@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/576bb71bbbcf0951d5000044
+
+My solution:
+
+def count_positives_sum_negatives(arr):
+    return [len([i for i in arr if i > 0]), sum([i for i in arr if i < 0])] if len(arr) != 0 else []
+    
+    
+    
+Other solution (The hard way):
+
+def count_positives_sum_negatives(arr):
+    new_array = []
+    for n in arr:
+        if n > 0:
+            count(arr)
+            new_array.append(x)
+        elif n < 0:
+            Sum = sum(arr)
+            new_array.append(Sum)
+        else:
+            return []
+    return new_array
