@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/53dc23c68a0c93699800041d
+
+def smash(words):
+    if len(words) >= 1:
+        return ' '.join(words)
+    else:
+        return ''
+        
+Cleaver resolution:
+
+def smash(words):
+  return " ".join(words)
