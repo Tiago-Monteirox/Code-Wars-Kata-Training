@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5390bac347d09b7da40006f6
+
+def to_jaden_case(string):
+    string = string.split()
+    new_l = []
+    for s in string:
+        new_l.append(s[:1].upper() + s[1:].lower())
+    return " ".join(new_l)
