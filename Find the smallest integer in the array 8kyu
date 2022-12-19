@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/55a2d7ebe362935a210000b2
+
+My resolution: 
+
+def find_smallest_int(arr):
+  return min(arr)
+    
+    
+Other resolution:
+
+def find_smallest_int(arr):
+  arr.sort()
+  return arr[0]
+
+    
+    
+def find_smallest_int(arr):    
+  smallest = []
+  for i in range(0,len(arr)):
+      if (arr[i] < smallest):
+          smallest = arr[i]
+  return smallest
