@@ -1,0 +1,29 @@
+https://www.codewars.com/kata/52fba66badcd10859f00097e
+
+My resolution: 
+
+def disemvowel(string_):
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+    for letter in string_:
+        if letter in vowels:
+            string_ = string_.replace(letter, '')
+    return string_
+    
+Other resolutions:
+
+def disemvowel(str2handle):
+    vowel_character = ["a", "A", "e", "E", "o", "O", "i", "I", "u", "U"]
+    str2return = ""
+    i = 0
+    n = len(str2handle)
+    while i < n:
+        if not str2handle[i] in vowel_character:
+            str2return += str2handle[i]
+        i += 1
+    return str2return
+ 
+ 
+ 
+def disemvowel(str2handle):
+  return "".join(c for c in string if c.lower() not in "aeiou")
