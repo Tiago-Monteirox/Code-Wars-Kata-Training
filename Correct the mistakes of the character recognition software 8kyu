@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/577bd026df78c19bca0002c0/train/python
+
+def correct(string):
+    dict = {'5':'S', '0':'O', '1':'I'}
+    for c in string:
+        if c in dict:
+            string = string.replace(c, dict[c])
+    return string
