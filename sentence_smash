@@ -1,0 +1,11 @@
+def smash(words):
+    if len(words) >= 1:
+        return ' '.join(words)
+    else:
+        return ''
+    
+
+print(smash(['hello', 'world', 'this', 'is', 'great']))
+
+
+return " ".join(words)
